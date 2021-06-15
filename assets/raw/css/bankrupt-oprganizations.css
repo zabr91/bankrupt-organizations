@@ -1,0 +1,305 @@
+/**
+ * bankrupt-oprganizations CSS stylesheet asset.
+ *
+ * @author Ivan Zabroda <ivanzabroda62@gmail.com>
+ * @package bankrupt-organizations
+ * @version 1.0.0
+ */
+
+.visible-xs {
+    display: none;
+}
+.filter_podobrat {
+    margin-bottom: 20px;
+}
+.filter_podobrat form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.filter_podobrat .column4 {
+    display: inline-block;
+    /* width: 24%; */
+    vertical-align: top;
+}
+.filter_podobrat .column4 .select {
+    margin-bottom: 10px;
+    width: 200px;
+}
+.filter_podobrat .column4 .select select {
+    width: 100%;
+    font-size: 14px;
+    color: #626262;
+    height: 50px;
+    border: 0;
+    background: #f1f3f5;
+    border-radius: 5px;
+    padding-left: 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #f1f3f5;
+    background-image: url(../img/select.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.filter_podobrat .column4 input[type=checkbox] {
+    display: none;
+}
+
+.filter_podobrat .column4 b {
+    display: block;
+    font-size: 14px;
+    color: #424242;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.filter_podobrat .column4 label {
+    display: block;
+    font-size: 12px;
+    color: #424242;
+    margin-bottom: 10px;
+    padding-top: 4px;
+}
+
+.filter_podobrat .column4 .select select:hover,
+.filter_podobrat .column4 label:hover i{background-color:#dfe1e3;}
+
+.filter_podobrat .column4 input[type=checkbox]+i {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border: 2px solid #cfd0d2;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.filter_podobrat .column4 input[type=checkbox]:checked+i{
+    background: #cfd0d2;
+}
+
+.filter_podobrat .column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 12px;
+}
+#content_w .text_content .filter_podobrat a {
+    font-size: 16px;
+    color: #828282;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #cfd0d2;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 38%;
+    justify-content: center;
+    transition: ease 0.3s all;
+}
+
+.filter_podobrat .column button.find {
+    font-size: 16px;
+    background: #006acd;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    width: 419px;
+    height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease 0.3s opacity;
+}
+.result_filter {
+    background: #fff;
+    padding: 27px 29px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.result_filter .title {
+    font-size: 18px;
+    color: #424242;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.result_filter table thead td {
+    border-bottom: 1px solid #ebeff1;
+    border-right: 1px solid #ebeff1;
+    font-size: 12px;
+    color: #424242;
+    font-weight: bold;
+    padding: 7px 0 7px 10px;
+    background: #f4f8fa;
+}
+.result_filter table tbody td:first-child {
+    padding-left: 0;
+}
+
+.result_filter table tbody td a {
+    text-transform: uppercase;
+    color: #006acd;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.result_filter table tbody td:first-child {
+    padding-left: 0;
+}
+
+.result_filter table tbody td {
+    font-family: 'gilroy';
+    font-size: 12px;
+    border-bottom: 1px solid #ebeff1;
+    padding: 14px 0;
+    border-right: 1px solid #ebeff1;
+    background: none;
+    padding-left: 10px;
+    height: 55px;
+    vertical-align: top;
+}
+
+#popupfilter {
+    font-size: 14px;
+    color: #006bcf;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background: none;
+}
+
+#popupfilter:before {
+    content: url(../img/filter.png);
+    display: inline-block;
+    position: relative;
+    top: 7px;
+    margin-right: 10px;
+}
+
+
+
+@media (max-width: 767px) {
+    .main-heading h1 {
+        font-size: 22px;
+        color: #323232;
+        font-weight: 500;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+
+    .result_filter {
+        padding-right: 0;
+    }
+
+    .result_filter+.pagination_block {
+        min-height: 34px;
+    }
+
+    .visible-xs {
+        display: block!important;
+    }
+
+    .sidebar_banner {
+        position: relative;
+        top: -34px;
+        /* padding-bottom: 18px; */
+        /* box-shadow: 0 10px 30px 0px rgb(0 14 43 / 5%); */
+        margin-bottom: 18px;
+        border-radius: 5px;
+    }
+
+    .filter_podobrat form {
+        display: none;
+        position: fixed;
+        background: #fff;
+        z-index: 99;
+        top: 0;
+        left: -100%;
+        right: 100%;
+        bottom: 0;
+        padding: 0 20px;
+        transition: ease 0.2s all;
+        padding-top: 107px;
+        overflow-y: scroll;
+        display: block;
+        /* z-index: -999; */
+        visibility: hidden;
+    }
+
+    .visible-xs {
+        display: block!important;
+    }
+
+    .filter_podobrat .column4 {
+        width: 100%;
+        border: beige;
+    }
+
+    .filter_podobrat .column4.sec {
+        width: auto;
+        float: left;
+        min-width: 42%;
+        padding-top: 5px;
+    }
+
+    .filter_podobrat .column4 .select {
+        width: 100%;
+    }
+
+    .result_filter {
+        padding-right: 0;
+    }
+
+    .result_filter .scroll {
+        overflow-y: scroll;
+        width: 100%;
+    }
+
+    .result_filter+.pagination_block {
+        min-height: 34px;
+    }
+    .result_filter{padding-right: 0;}
+    .result_filter .scroll{overflow-y: scroll;width: 100%;}
+    .result_filter .scroll table{}
+    .result_filter .scroll table thead td{white-space: nowrap;padding-right: 10px;}
+    .result_filter .scroll table tbody td{padding-right: 4px;}
+    .filter_podobrat form{display: none;position: fixed;background: #fff;z-index: 99;top: 0;left: -100%;right: 100%;bottom: 0;padding: 0 20px;transition: ease 0.2s all;padding-top: 107px;overflow-y: scroll;display: block;/* z-index: -999; */visibility: hidden;}
+    .filter_podobrat form.open{display: block;left: 0;right: 0;z-index: 99;visibility: visible;}
+    .filter_podobrat .column4{width: 100%;border: beige;}
+    .filter_podobrat .column{flex-direction: column-reverse;padding-top: 31px;}
+    .filter_podobrat .column4 .select{width: 100%;}
+    .filter_podobrat .column4:first-child{}
+    .filter_podobrat .column4:first-child+.column4{}
+    #content_w .text_content .filter_podobrat form .head_mobile{/* margin-left: -20px; *//* margin-right: -20px; */border-bottom: 1px solid #c2c3c5;padding-left: 3px;padding-bottom: 17px;background: #fff;padding-top: 19px;position: relative;height: 75px;left: -100%;right: 100%;margin-bottom: 0;position: fixed;top: 0;transition: ease 0.2s all;}
+    #content_w .text_content .filter_podobrat form .head_mobile .title{width: 185px;text-align: left;border: 0;white-space: nowrap;padding-left: 16px;}
+    #content_w .text_content .filter_podobrat form .head_mobile .title:before{content:url('images/filter2.png');display: inline-block;position: relative;top: 5px;}
+    #content_w .text_content .filter_podobrat form .head_mobile .close{position: absolute;top: 25px;right: 19px;width: 25px;height: 25px;border: 0;background: none;z-index: 9;cursor: pointer;}
+    #content_w .text_content .filter_podobrat form.open .head_mobile{ left: 0;       right: 0;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .result_filter .scroll {
+        overflow-x: auto;
+    }
+
+    .filter_podobrat .column button.find {
+        width: 60%;
+        padding: 14px 94px 17px 27px;
+
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .filter_podobrat .column4{width: 48%;}
+    .filter_podobrat .column4 .select{width: 100%;}
+    .filter_podobrat .column button.find{width: 60%;}
+    .filter_podobrat .column4 .select select{}
+}
+
